@@ -20,6 +20,8 @@ public class GameSetupState : GameState
         Debug.Log("STATE: SETUP");
         Debug.Log("Load save data");
         Debug.Log("Spawn Units");
+       _controller.UnitSpawner.Spawn(_controller.PlayerUnitPrefab,
+            _controller.PlayerUnitSpawnLocation);
     }
 
     public override void Exit()

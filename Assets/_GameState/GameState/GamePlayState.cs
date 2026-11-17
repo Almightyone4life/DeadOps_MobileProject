@@ -33,7 +33,11 @@ public class GamePlayState : GameState
     public override void Tick()
     {
         base.Tick();
-        Debug.Log("Checking for Win Condition");
-        Debug.Log("Checking for Lose Condition");
+        //check for win condition
+        if(_controller.Input.IsTapPressed == true)
+        {
+            Debug.Log("You Win!");
+        }
+       
     }
 }
