@@ -1,0 +1,22 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=3d3227963aaaf634b97833438e2c045e&amp;type=3#MainMenuStyle"/>
+    <ui:VisualElement name="Container" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Images/Screenshot%202025-05-04%20220229.png?fileID=2800000&amp;guid=cf1ccf71851f935448fad91b8c295d80&amp;type=3#Screenshot 2025-05-04 220229&quot;);">
+        <ui:Label text="Main Menu" name="MainMenu_txt" class="header"/>
+        <ui:VisualElement name="RootMenu" style="flex-grow: 1; display: flex; visibility: visible;">
+            <ui:Button text="Start" name="StartButton" class="button"/>
+            <ui:Button text="Settings" name="SettingsButton" class="button"/>
+            <ui:Button text="Credits&#10;" name="CreditsButton" class="button"/>
+            <ui:Button text="Quit" name="QuitButton" class="button"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="SettingsMenu" style="flex-grow: 1; display: none; visibility: visible;">
+            <ui:Label text="Settings" name="SettingsHeader" class="header2"/>
+            <ui:Label text="Placeholder Text. &#10;   Change later." name="SettingsText" class="header2" style="font-size: 50px;"/>
+            <ui:Button text="Back&#10;" name="SettingsBackButton" class="button"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="CreditsMenu" style="flex-grow: 1; display: none; visibility: visible;">
+            <ui:Label text="Credits" name="CreditsHeader" class="header2"/>
+            <ui:Label text="Programmer: Brandon Hutson&#10;Music: Royalty Free websites&#10;Sound Effects: ChipTone " name="CreditsText" class="header2" style="font-size: 50px; margin-left: 234px;"/>
+            <ui:Button text="Back&#10;" name="CreditsBackButton" class="button"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
